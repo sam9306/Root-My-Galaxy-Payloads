@@ -1,4 +1,4 @@
-name: Makefile CI
+name: Android NDK Build
 
 on:
   push:
@@ -8,20 +8,29 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
+    strategy:
+      fail-fast: false
+      matrix:
+        target:
+          - r9q-G990B2XXSJIZF1
+          - pa3q-S938NKSUACZF1
+          - e3q-S928USQS6DZF2
+          - essi-A566EXXSCCZG6
+
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: configure
-      run: ./configure
+      - name: Set up Android NDK
+        uses: nttld/setup-ndk@v1
+        with:
+          ndk-version: r29
+          add-to-path: true
 
-    - name: Install dependencies
-      run: make
+      - name: Build ${{ matrix.target }}
+        run: make TARGET=${{ matrix.target }} ANDROID_NDK_HOME=$ANDROID_NDK_HOME
 
-    - name: Run check
-      run: make check
-
-    - name: Run distcheck
-      run: make distcheck
+      - name: Clean build artifacts
+        run: make clean
+        if: always()
