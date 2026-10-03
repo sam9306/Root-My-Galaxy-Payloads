@@ -1,0 +1,59 @@
+{
+  "currentUserLogin": "sam9306",
+  "threadUrl": "https://github.com/copilot/c/4c84f938-4d8b-4770-8ad9-0b19d855671a",
+  "threadName": "List functions and variables in a",
+  "messages": [
+    {
+      "id": "root",
+      "role": "user",
+      "createdAt": "",
+      "threadID": "",
+      "references": null
+    },
+    {
+      "id": "ee737123-a717-4a70-a00f-b56efe068b1f",
+      "parentMessageID": "root",
+      "role": "user",
+      "content": "List and define the functions and variables in this file",
+      "createdAt": "2026-09-25T16:11:17.263Z",
+      "threadID": "4c84f938-4d8b-4770-8ad9-0b19d855671a",
+      "references": [],
+      "skillExecutions": []
+    },
+    {
+      "id": "b9f651ff-f364-4844-bc42-c77b2f1a646d",
+      "parentMessageID": "ee737123-a717-4a70-a00f-b56efe068b1f",
+      "intent": "conversation",
+      "role": "assistant",
+      "model": "gpt-5.6-luna",
+      "content": "Please provide the file contents, upload the file, or share its GitHub path/URL. I’ll list and define every function and variable it contains.",
+      "createdAt": "2026-09-25T16:11:20.390206552Z",
+      "threadID": "4c84f938-4d8b-4770-8ad9-0b19d855671a",
+      "references": [],
+      "skillExecutions": []
+    },
+    {
+      "id": "ebb5b305-242c-4046-9af0-612c5036f3af",
+      "parentMessageID": "b9f651ff-f364-4844-bc42-c77b2f1a646d",
+      "role": "user",
+      "content": "python build_win.py r9q-G9900ZHSKIZE1",
+      "createdAt": "2026-09-25T16:11:21.316Z",
+      "threadID": "4c84f938-4d8b-4770-8ad9-0b19d855671a",
+      "references": [],
+      "skillExecutions": []
+    },
+    {
+      "id": "1a5dc5d9-4258-43f7-bf2d-26231a633f59",
+      "parentMessageID": "ebb5b305-242c-4046-9af0-612c5036f3af",
+      "intent": "conversation",
+      "role": "assistant",
+      "model": "gpt-5.6-luna",
+      "content": "`python build_win.py r9q-G9900ZHSKIZE1` is a command, not the contents of `build_win.py`. Please upload `build_win.py`, paste its contents, or provide its GitHub repository/path so I can list and define its functions and variables.",
+      "createdAt": "2026-09-25T16:11:25.380503735Z",
+      "threadID": "4c84f938-4d8b-4770-8ad9-0b19d855671a",
+      "references": [],
+      "skillExecutions": []
+    }
+  ],
+  "files": {}
+}
